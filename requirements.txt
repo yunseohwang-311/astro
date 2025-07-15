@@ -1,4 +1,0 @@
-streamlit
-astropy
-numpy
-pillow
