@@ -53,11 +53,6 @@ if uploaded_file is not None:
         edges = cv2.Canny(image, 30, 120)
         st.image(edges, use_column_width=True, clamp=True)
 
-    with col2:
-        st.write("Laplacian 필터")
-        lap = cv2.Laplacian(image, cv2.CV_64F)
-        lap = np.uint8(np.absolute(lap))
-        st.image(lap, use_column_width=True, clamp=True)
 
     # 중심 대칭 분석
     st.subheader("📌 밝기 중심과 비대칭 구조 시각화")
