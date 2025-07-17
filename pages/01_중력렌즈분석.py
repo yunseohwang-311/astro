@@ -72,6 +72,6 @@ if uploaded_file is not None:
     marked = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
     cv2.circle(marked, (x_center, y_center), 5, (0, 0, 255), -1)
 
-    st.image(marked, caption="붉은 점: 밝기 중심 (중력렌즈의 중심일 가능성)", use_column_width=True)
+    st.image(marked, caption="푸른 점: 밝기 중심 (중력렌즈의 중심일 가능성)", use_column_width=True)
 
     st.info("엣지 구조가 중심을 기준으로 비대칭적이면 중력렌즈 의심 구조일 가능성이 있습니다.")
